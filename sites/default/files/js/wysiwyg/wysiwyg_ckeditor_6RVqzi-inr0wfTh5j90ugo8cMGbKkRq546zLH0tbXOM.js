@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/www/kazak-film/sites/all/libraries/ckeditor/';
