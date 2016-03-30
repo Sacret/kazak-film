@@ -78,7 +78,9 @@ body {
 }
 
 .main-content-wrapper .main-content .col-sm-12, .main-content-wrapper .main-content .col-sm-9 {
-  background: url("../images/titles-bg.png") repeat-x center 49px;
+  @media (min-width: @screen-md) {
+    background: url("../images/titles-bg.png") repeat-x center 49px;
+  }
 }
 
 .view-news {
@@ -91,6 +93,18 @@ body {
   .views-field-title a {
     color: #000;
     font-size: 22px;
+  }
+}
+
+.view-news, .view-for-cinema {
+  .col {
+    margin-bottom: 30px;
+    @media (max-width: @screen-md) {
+      text-align: center;
+      img {
+        margin: auto;
+      }
+    }
   }
 }
 
